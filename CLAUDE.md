@@ -72,8 +72,9 @@ docs/refs/        références visuelles et mesures de mouvement (vide jusqu'à 
 assets-raw/       sources lourdes de génération d'images — gitignoré
 ```
 
-Le plan de conception complet vit dans le hub :
-`C:\Users\Patrick Patenaude\.claude\plans\je-pensais-ventuellement-rustling-hanrahan.md`.
+Les décisions de conception durables vivent dans `docs/DECISIONS.md` — elles y sont, avec leur
+pourquoi et l'option écartée. Aucun document hors du dépôt n'est nécessaire pour reprendre le
+travail.
 
 ## Ce qui n'est pas encore décidé
 

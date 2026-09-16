@@ -3,9 +3,7 @@
 Le hub (`C:\Nexus\BACKLOG.md`) n'en garde qu'une ligne de renvoi. Même forme que le hub : une puce, un
 marqueur d'état facultatif (🎯 ⏳ ⏸️ ❓), un titre, la date d'ajout, le premier geste.
 
-Le plan complet de la séance de conception vit dans
-`C:\Users\Patrick Patenaude\.claude\plans\je-pensais-ventuellement-rustling-hanrahan.md`.
-Ici ne vivent que les tâches ouvertes.
+Ici ne vivent que les tâches ouvertes ; le pourquoi des choix est dans `DECISIONS.md`.
 
 ## Les phases et leurs portes
 

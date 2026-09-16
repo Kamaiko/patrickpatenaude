@@ -1,9 +1,8 @@
 # Décisions — patrickpatenaude.com
 
 Une entrée par décision : la question, ce qui est tranché, les raisons, ce qui a été écarté et
-pourquoi, ce qui rouvrirait la question. Les décisions de conception complètes sont dans le plan du
-hub (`C:\Users\Patrick Patenaude\.claude\plans\je-pensais-ventuellement-rustling-hanrahan.md`) ;
-ici ne vivent que celles qui gouvernent le code.
+pourquoi, ce qui rouvrirait la question. Toutes les décisions qui gouvernent ce dépôt sont ici :
+reprendre le travail ne demande aucun document extérieur.
 
 ## 2026-09-15 — La thèse : un rendu fini et poli, pas une preuve d'ingénierie
 
