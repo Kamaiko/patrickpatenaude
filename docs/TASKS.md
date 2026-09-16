@@ -59,7 +59,10 @@ reste entier sans WebGL et sous `prefers-reduced-motion`.
   Un budget fixé avant la première mesure serait inventé.
   Premier geste : mesurer la scène réelle, puis écrire le budget sur ce chiffre.
 - ⏸️ **Tests de fumée Playwright et axe-core** · 2026-09-15 — quand les pages cessent de bouger (S7)
-  Écrire des tests contre une interface qui change de forme chaque jour est du travail jetable.
+  Mesuré : aucun des sept sites vitrine du parc n'a jamais été sauvé par un test, et le rendu WebGL
+  n'est pas testable en CI (le canvas vit sur le GPU) — on vérifie qu'il existe, rien de plus.
+  ⚠️ Claude n'écrit pas un test à partir de sa propre lecture du code qu'il vient d'écrire : Patrick
+  dicte d'abord le comportement attendu, sinon le test est un miroir du bug plutôt qu'un garde-fou.
   Premier geste : trois tests — la page charge, le canvas est présent, zéro erreur console.
 - ⏸️ **Skill `wrap-up` propre au projet** · 2026-09-15 — vers S5, quand le rythme sera connu
   Patron : `Projects\HalteroFit\.claude\skills\wrap-up\`.
