@@ -1,0 +1,13 @@
+@import "tailwindcss";
+
+/* Les tokens de design (palette, typo, radius, durées, eases) naissent en S4, une fois la direction
+   artistique validée sur planche. Rien ici avant — des tokens écrits avant la DA sont des tokens
+   inventés. Voir docs/TASKS.md. */
+
+@theme {
+  /* vide — S4 */
+}
+
+html {
+  color-scheme: light dark;
+}

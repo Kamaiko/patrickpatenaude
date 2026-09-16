@@ -1,0 +1,36 @@
+# dependencies
+/node_modules
+/.pnp
+.pnp.*
+
+# next.js
+/.next/
+/out/
+
+# production
+/build
+
+# sources lourdes de génération d'images (voir docs/assets-a-generer.md)
+/assets-raw/
+
+# misc
+.DS_Store
+*.pem
+Thumbs.db
+
+# debug
+npm-debug.log*
+pnpm-debug.log*
+
+# typescript
+*.tsbuildinfo
+next-env.d.ts
+
+# local env
+.env*
+!.env.example
+
+# éditeurs
+.vscode/*
+!.vscode/settings.json
+.idea
