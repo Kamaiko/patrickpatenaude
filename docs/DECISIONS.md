@@ -13,7 +13,7 @@ ma rigueur technique ».
 première formulation : « des termes que j'ai dits sur le coup, pas à prendre trop au sérieux —
 c'était une façon d'exprimer l'intérêt d'avoir un rendu fini, poli ».
 
-**Raisons.** Un visiteur *voit* le fini en trois secondes ; il ne verra jamais la profondeur d'un
+**Raisons.** Un visiteur _voit_ le fini en trois secondes ; il ne verra jamais la profondeur d'un
 raisonnement sans parler à son auteur. La thèse du fini est donc la seule que le média sache porter.
 Elle est aussi la plus honnête : cinq des projets montrés sont des sites front bâtis rapidement.
 
@@ -75,8 +75,7 @@ précédente a retenu **TS 6**, sous lequel `typescript-eslint` fonctionne parfa
 avait survécu au retrait de sa prémisse.
 
 **Raisons du choix retenu.** 1. `eslint-config-next` porte des règles que rien d'autre ne connaît
-aussi bien (`no-img-element`, `no-html-link-for-pages`, `no-sync-scripts`, `google-font-display`).
-2. Tous les autres projets Next du parc l'utilisent : un solo dev qui jongle entre cinq dépôts gagne
+aussi bien (`no-img-element`, `no-html-link-for-pages`, `no-sync-scripts`, `google-font-display`). 2. Tous les autres projets Next du parc l'utilisent : un solo dev qui jongle entre cinq dépôts gagne
 à ce qu'ils se ressemblent. 3. L'avantage d'Oxlint est la vitesse (12 à 18×) — inexistant sur un
 projet de trois fichiers.
 
@@ -149,3 +148,36 @@ avant), pas une incompatibilité. Rétrograder désalignerait le projet du reste
 
 **Ce qui rouvrirait la question.** Un bug de rendu ou d'hydratation réel attribuable à R3F sous React
 19.3 — auquel cas on épingle 19.2.x le temps que R3F publie une version qui élargit son peer.
+
+## 2026-09-15 — Prettier plutôt que Biome, et ce qu'on n'installe pas encore
+
+**Question.** Aucun projet du parc n'a de formateur, ni de `.editorconfig`. Lequel poser, et quelle
+part de l'outillage « standard 2026 » vaut la peine sur un site vitrine bâti en solo ?
+
+**Tranché.** **Prettier** + `prettier-plugin-tailwindcss`, `simple-git-hooks` + `lint-staged` pour un
+seul crochet de pré-commit qui formate les fichiers indexés, une CI GitHub Actions calquée sur celle
+d'`alpine-website` (format, lint, typecheck, build, audit), Dependabot mensuel en un seul lot, et un
+`.editorconfig`.
+
+**Raisons.** 1. `prettier-plugin-tailwindcss` trie les classes Tailwind — bénéfice concret et
+quotidien sur un projet Tailwind v4, que Biome n'égale pas. 2. Biome chevaucherait
+`eslint-config-next` et créerait deux sources de vérité pour le style. 3. Poser le formateur
+**maintenant** coûte une minute ; le poser après cinquante commits de design impose de tout
+reformater d'un coup, avec des diffs illisibles. 4. Un seul crochet, rapide : un pré-commit qui
+lance build et tests tue le rythme et finit désactivé.
+
+**Écarté, et pourquoi.** Biome (voir ci-dessus). **Gitflow** — cérémonial pensé pour coordonner
+plusieurs personnes. **commitlint / semantic-release** — rien n'est publié ni versionné
+sémantiquement. **Renovate** — sa valeur est le monorepo et le multi-plateforme, absents ici.
+**Objectif de couverture de tests** — presque aucune logique métier à protéger, et les instantanés
+meurent à chaque retouche de design. **Régression visuelle pixel** — sur un design animé en
+itération, le bruit dépasserait le signal.
+
+**Reporté, avec son déclencheur** (détail dans `TASKS.md`) : Sentry et les budgets Lighthouse CI à
+S5, quand une scène 3D existe — un budget fixé avant la première mesure serait inventé, et un
+monitoring posé avant le code WebGL ne surveille rien ; les tests de fumée Playwright et axe-core à
+S7, quand les pages cessent de bouger.
+
+**Ce qui rouvrirait la question.** Un temps de formatage devenu gênant (Biome redeviendrait
+intéressant), ou l'arrivée d'une vraie logique métier dans le dépôt (les tests unitaires
+cesseraient d'être du cargo cult).

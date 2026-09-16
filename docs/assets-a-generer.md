@@ -42,5 +42,5 @@ développeur par défaut** — cyan sur ardoise, dégradés bleu-violet, cartes 
 Vide. Le premier asset naît en S4 (planche image cible), pas avant.
 
 | Asset | Conteneur | Ratio | Px physiques | Modèle | État |
-|---|---|---|---|---|---|
-| — | — | — | — | — | — |
+| ----- | --------- | ----- | ------------ | ------ | ---- |
+| —     | —         | —     | —            | —      | —    |

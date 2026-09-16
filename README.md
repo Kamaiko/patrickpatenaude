@@ -8,7 +8,7 @@ domaine revient à l'application HalteroFit.
 ## Stack
 
 Next 16 (App Router, export statique) · React 19 · TypeScript 6 · Tailwind v4 · GSAP + Lenis ·
-Three.js / React Three Fiber · Oxlint · déployé sur Vercel.
+Three.js / React Three Fiber · ESLint · déployé sur Vercel.
 
 ## Commandes
 
@@ -19,14 +19,15 @@ pnpm build      # export statique dans out/
 pnpm preview    # sert out/ sur le port 3005
 pnpm typecheck
 pnpm lint
+pnpm format     # prettier --write
 ```
 
 ## Documentation
 
-| Fichier | Contenu |
-|---|---|
-| `CLAUDE.md` | Règles du dépôt, interdits, pièges |
-| `docs/DECISIONS.md` | Une entrée par décision : tranché, écarté, ce qui rouvrirait |
-| `docs/TASKS.md` | Les phases, leurs portes, ce qui reste ouvert |
-| `docs/assets-a-generer.md` | Charte de génération d'images |
-| `docs/refs/` | Références visuelles et mesures de mouvement |
+| Fichier                    | Contenu                                                      |
+| -------------------------- | ------------------------------------------------------------ |
+| `CLAUDE.md`                | Règles du dépôt, interdits, pièges                           |
+| `docs/DECISIONS.md`        | Une entrée par décision : tranché, écarté, ce qui rouvrirait |
+| `docs/TASKS.md`            | Les phases, leurs portes, ce qui reste ouvert                |
+| `docs/assets-a-generer.md` | Charte de génération d'images                                |
+| `docs/refs/`               | Références visuelles et mesures de mouvement                 |
