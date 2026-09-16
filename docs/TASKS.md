@@ -23,12 +23,14 @@ Pas de dates — Patrick travaille par blocs longs irréguliers.
 | S7 | Pages projet et finition | Les quatre seuils de perf |
 | S8 | Mise en ligne | `noindex` retiré, liens externes à jour le même jour |
 
-## 🎯 S1 — en cours
+## ✅ S1 — fait le 2026-09-15
 
-- 🎯 **Déploiement Vercel à blanc** · 2026-09-15
-  Sur une adresse `.vercel.app` — le domaine patrickpatenaude.com s'achète plus tard, quand le site
-  sera en construction (décision de Patrick, il n'est pas pressé).
-  Premier geste : créer le projet Vercel depuis le dépôt GitHub.
+En ligne sur **https://patrickpatenaude.vercel.app** (`noindex`, vérifié dans le HTML livré).
+Dépôt public : https://github.com/Kamaiko/patrickpatenaude — déploiement automatique depuis `main`.
+
+Porte franchie, mesurée : `pnpm lint` exit 0 · `pnpm typecheck` propre · `pnpm build` ✓ ·
+build Vercel ✓ en 27 s, les deux routes en `○ (Static) prerendered as static content` — export
+statique confirmé, aucune fonction déployée.
 
 ## ⏳ S2 — la prochaine
 
