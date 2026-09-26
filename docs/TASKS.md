@@ -42,7 +42,8 @@ reste entier sans WebGL et sous `prefers-reduced-motion`.
 
 - ❓ **Le rôle de la 3D** — pièce maîtresse unique, monde traversé au scroll, ou 3D diffuse.
 - ❓ **La structure du site** — page longue, ou accueil plus pages projet séparées.
-- ❓ **La provenance des modèles 3D** — procédural, généré (Higgsfield, `img2threejs`), ou téléchargé.
+- ❓ **La provenance des modèles 3D** — procédural, généré (image vers 3D, Higgsfield), ou téléchargé.
+  Ce que la copie de Sakura River Valley en a appris : `Projects\Web\valley-study\docs\LECONS.md`.
 
 ## ⏸️ En attente
 
